@@ -16,7 +16,7 @@ def load_all():
 
 df, index_dict = load_all()
 
-word = st.text_input("Search for a word:")
+word = st.text_input("Search for a word:",placeholder="Search for a word...")
 if word:
     st.write(f"Results for **{word}**:")
     results = explore_word(df, index_dict, word)
